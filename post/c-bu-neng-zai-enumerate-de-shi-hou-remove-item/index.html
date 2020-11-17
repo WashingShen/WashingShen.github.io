@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | ABlogSite</title>
+<title>C# 不能在enumerate 的时候remove item | ABlogSite</title>
 <meta name="description" content="Some Gibberish">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -81,25 +81,40 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>关于</h1>
+            <h1>C# 不能在enumerate 的时候remove item</h1>
             <p class="article-meta">
-              2019-01-25
+              2020-11-17
               
             </p>
             
             <div class="post-content">
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+              <p>今天遇到个问题，需要在<code>ObservableCollection</code>里面根据一个<code>item</code>的<code>Name</code>移除它，想着就写了然后就报了错，大致意思就是不能在enumerate 的时候remove item，因为remove item后Collection就改变了就不能enumerate了。之后找到的解决办法是，加一个<code>break</code>关键字就好，因为反正我也只需要移除一个item，所以刚刚够用。</p>
+<pre><code class="language-C#"> foreach (var detector in Detectors)
+ {
+         if (detector.Name==selectedItemName)
+           {
+               Detectors.Remove(detector);
+                break;
+            }
+ }
+</code></pre>
+<p>还看到Stackoverflow上说，可能和multiple-thread有关，我觉得是有道理的，但也还没有特别明白，先这样吧！</p>
 
             </div>
           </article>
         </div>
         <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://WashingShen.github.io/post/redmi-k30-shua-resurrection-remix-he-gapp/">
+                <h3 class="post-title">
+                  Redmi K30刷Resurrection Remix和gapp
+                </h3>
+              </a>
+            </div>
           
         </div>
         
