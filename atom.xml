@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://WashingShen.github.io</id>
     <title>ABlogSite</title>
-    <updated>2020-11-17T07:25:21.678Z</updated>
+    <updated>2020-11-17T09:50:18.188Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://WashingShen.github.io"/>
     <link rel="self" href="https://WashingShen.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://WashingShen.github.io/images/avatar.png</logo>
     <icon>https://WashingShen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ABlogSite</rights>
+    <entry>
+        <title type="html"><![CDATA[如何写带单位的TextBox]]></title>
+        <id>https://WashingShen.github.io/post/ru-he-xie-dai-dan-wei-de-textbox/</id>
+        <link href="https://WashingShen.github.io/post/ru-he-xie-dai-dan-wei-de-textbox/">
+        </link>
+        <updated>2020-11-17T09:48:21.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-xaml">&lt;ControlTemplate x:Key=&quot;MMTextbox&quot; TargetType=&quot;TextBox&quot;&gt;
+    &lt;Grid&gt;      
+        &lt;TextBox&gt;&lt;/TextBox&gt;      
+        &lt;TextBlock  HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,0,4,0&quot;  Text=&quot;mm&quot;                   VerticalAlignment=&quot;Center&quot; Foreground=&quot;Black&quot;  &gt;&lt;/TextBlock&gt;    
+    &lt;/Grid&gt;
+&lt;/ControlTemplate&gt;
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[C# 不能在enumerate 的时候remove item]]></title>
         <id>https://WashingShen.github.io/post/c-bu-neng-zai-enumerate-de-shi-hou-remove-item/</id>

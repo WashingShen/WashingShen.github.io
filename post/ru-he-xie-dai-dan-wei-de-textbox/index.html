@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | ABlogSite</title>
+<title>如何写带单位的TextBox | ABlogSite</title>
 <meta name="description" content="Some Gibberish">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://WashingShen.github.io">ABlogSite</a></h3>
@@ -76,56 +77,45 @@
   </div>
 </nav>
 
-    
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          
+          <article class="article">
+            <h1>如何写带单位的TextBox</h1>
+            <p class="article-meta">
+              2020-11-17
+              
+            </p>
+            
+            <div class="post-content">
+              <pre><code class="language-xaml">&lt;ControlTemplate x:Key=&quot;MMTextbox&quot; TargetType=&quot;TextBox&quot;&gt;
+    &lt;Grid&gt;      
+        &lt;TextBox&gt;&lt;/TextBox&gt;      
+        &lt;TextBlock  HorizontalAlignment=&quot;Right&quot; Margin=&quot;0,0,4,0&quot;  Text=&quot;mm&quot;                   VerticalAlignment=&quot;Center&quot; Foreground=&quot;Black&quot;  &gt;&lt;/TextBlock&gt;    
+    &lt;/Grid&gt;
+&lt;/ControlTemplate&gt;
+</code></pre>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h3 class="year" data-aos-delay="500">2020</h3>
-              
-                
-                  <article class="post">
-                    <a href="https://WashingShen.github.io/post/ru-he-xie-dai-dan-wei-de-textbox/">
-                      <h4 class="post-title">
-                        如何写带单位的TextBox
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://WashingShen.github.io/post/c-bu-neng-zai-enumerate-de-shi-hou-remove-item/">
-                      <h4 class="post-title">
-                        C# 不能在enumerate 的时候remove item
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://WashingShen.github.io/post/redmi-k30-shua-resurrection-remix-he-gapp/">
-                      <h4 class="post-title">
-                        Redmi K30刷Resurrection Remix和gapp
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://WashingShen.github.io/post/c-bu-neng-zai-enumerate-de-shi-hou-remove-item/">
+                <h3 class="post-title">
+                  C# 不能在enumerate 的时候remove item
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://WashingShen.github.io/images/avatar.png?v=1605606614257" class="no-responsive avatar">
@@ -191,6 +181,8 @@
   </div>
 </div>
 
+
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
